@@ -1,0 +1,9 @@
+def solution(array):
+    count = 0
+    # join 메소드는 리스트 원소가 str 이어야 함 
+    # map 메소드로 리스트 int 원소를 srt로 변환
+    to_str ="".join(map(str,array))
+    for i in to_str:
+        if i == '7':
+            count +=1
+    return count  
